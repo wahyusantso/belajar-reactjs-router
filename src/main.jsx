@@ -11,6 +11,7 @@ import DataLayout from './DataLayout.jsx'
 import ProductDetail from './ProductDetail.jsx'
 import Image from './Image.jsx'
 import NotFound from './NotFound.jsx'
+import ProductSearch from './ProductSearch.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -23,6 +24,7 @@ createRoot(document.getElementById('root')).render(
             <Route index element={<Data/>}/> {/* as index path "data" */}
             {/* Nested Route */}
             <Route path="products" element={<Product/>}/>
+            <Route path="products/search" element={<ProductSearch/>}/>
             <Route path="customers" element={<Customer/>}/>
             <Route path="sellers" element={<Seller/>}/>
             <Route path="productid/:id/productname/:name" element={<ProductDetail/>}/> {/* menambahkan param di routing/url */}
