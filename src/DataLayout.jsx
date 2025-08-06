@@ -1,7 +1,8 @@
-import { Link, NavLink, Outlet } from "react-router";
+import { Link, NavLink, Outlet, useLocation } from "react-router";
 import "../public/style.css";
 
 export default function DataLayout() {
+    const location = useLocation(); //memberikan informasi halaman yang sedang diakses, seperti url dll.
     return (
         <>
             <div>
@@ -42,6 +43,7 @@ export default function DataLayout() {
             </div>
             <div>
                 <p style={{ color: "blueviolet" }}>This is footer</p>
+                <p>Location: {location.pathname}{location.search}{location.hash}</p> {/* implement useLocation */}
             </div>
         </>
     )
