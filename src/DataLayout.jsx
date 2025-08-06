@@ -4,13 +4,13 @@ export default function DataLayout() {
     return (
         <>
             <div>
-                <h1>This is Header</h1>
+                <h1 style={{ color: "blue" }}>This is Header</h1>
             </div>
             <div>
                 <Outlet/> {/* akan menambung child component */}
             </div>
             <div>
-                <p>This is footer</p>
+                <p style={{ color: "blueviolet" }}>This is footer</p>
             </div>
         </>
     )
