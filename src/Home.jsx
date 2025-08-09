@@ -12,7 +12,7 @@ export default function Home() {
     return (
         <div>
             <h1>Home</h1>
-            <p>Welcome the Dashboard page.</p>
+            <p>Welcome the Dashboard page Docker local with hot reload.</p>
             <button onClick={handleClick}>Go to Data page</button>
         </div>
     )
